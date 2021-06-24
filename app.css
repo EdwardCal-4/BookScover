@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: white;
+}
+
+body{
+  background: linear-gradient(to top right, #121c2d 50%,#2c162c 50%)
+}
+
+
+.resultHolder {
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  width: 100vw;
+}
+.resultHolder > div {
+  width: 25vw;
+  text-align: center;
+  padding: 1rem;
+  font-size: 15px;
+}
+
+.myImg {
+  height: 250px;
+  width: 200px;
+}
+
+
+
+@media (max-width:600px) {
+  .resultHolder {
+    grid-template-columns: 1fr;
+    width: 100vw;
+  }
+
+
+  .resultHolder > div {
+    width: 100vw;
+    text-align: center;
+    padding: 1rem;
+   
+  }
+}
